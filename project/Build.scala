@@ -22,7 +22,10 @@ object ScalaMacroSampleBuild extends Build {
     base = file("use"),
     settings = Seq(
       scalaVersion := "2.11.4",
-      scalacOptions += "-deprecation"
+      scalacOptions += "-deprecation",
+      libraryDependencies ++= Seq(
+        "org.scalatest" %% "scalatest" % "2.2.2" % "test"
+      )
     )
   ).dependsOn(macrolib)
 
@@ -32,7 +35,8 @@ object ScalaMacroSampleBuild extends Build {
     base = file("macro"),
     settings = Seq(
       name := "macro-library",
-      scalaVersion := "2.11.2",
+      scalaVersion := "2.11.4",
+      scalacOptions += "-language:experimental.macros",
       libraryDependencies ++= Seq(
         "org.scala-lang" % "scala-reflect" % "2.11.4"
       )
