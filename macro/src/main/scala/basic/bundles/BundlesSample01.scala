@@ -1,11 +1,11 @@
-package bundles
+package basic.bundles
 
 import scala.reflect.macros.blackbox.Context
 
 /**
  * マクロバンドルの実装
  *
- * http://docs.scala-lang.org/ja/overviews/macros/bundles.html
+ * http://docs.scala-lang.org/ja/overviews/macros/basic.bundles.html
  */
 class BundlesSample01Impl(val c: Context) {
   def mono = c.literalUnit

@@ -1,6 +1,6 @@
-package use.defmacro
+package use.basic.defmacro
 
-import defmacro.DefMacroSample02
+import basic.defmacro.DefMacroSample02
 
 class DefMacroSample02Use {
 

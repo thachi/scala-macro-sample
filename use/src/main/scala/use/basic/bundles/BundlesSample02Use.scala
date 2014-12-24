@@ -1,6 +1,6 @@
-package use.bundles
+package use.basic.bundles
 
-import bundles.BundlesSample02
+import basic.bundles.BundlesSample02
 
 class BundlesSample02Use {
 

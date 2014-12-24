@@ -1,4 +1,4 @@
-package use.defmacro
+package use.basic.defmacro
 
 import org.scalatest.FunSuite
 
@@ -9,7 +9,8 @@ class DefMacroSample02UseTest extends FunSuite {
     val d = new DefMacroSample02Use
     val ret = d.use1()
 
-    assert(ret == "hoge")
+    println(ret)
+    assert(ret == "java.lang.String")
   }
 
 }

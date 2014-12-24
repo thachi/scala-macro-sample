@@ -1,4 +1,4 @@
-package use.bundles
+package use.basic.bundles
 
 import org.scalatest.FunSuite
 

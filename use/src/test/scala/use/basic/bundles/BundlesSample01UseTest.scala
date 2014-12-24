@@ -1,4 +1,4 @@
-package use.bundles
+package use.basic.bundles
 
 import org.scalatest.FunSuite
 
@@ -9,7 +9,7 @@ class BundlesSample01UseTest extends FunSuite {
     val d = new BundlesSample01Use
     val a = d.use1()
 
-    assert(a == "a")
+    assert(a == ())
   }
 
   test("BundlesSample01Use#use2を呼ぶ") {

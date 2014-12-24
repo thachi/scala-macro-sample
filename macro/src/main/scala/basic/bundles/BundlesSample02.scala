@@ -1,11 +1,12 @@
-package bundles
+package basic.bundles
 
+import scala.reflect.macros.blackbox
 import scala.reflect.macros.blackbox.Context
 
 /**
  * 01のdeprecatedを改善しました
  */
-class BundlesSample02Impl(val c: Context) {
+class BundlesSample02Impl(val c: blackbox.Context) {
   import c.universe._
   def mono: Literal = Literal(Constant(()))
   def poly[T: c.WeakTypeTag]: Literal = {

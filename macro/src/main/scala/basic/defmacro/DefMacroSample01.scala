@@ -1,4 +1,4 @@
-package defmacro
+package basic.defmacro
 
 
 import scala.reflect.macros.Context
